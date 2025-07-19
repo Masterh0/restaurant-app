@@ -8,7 +8,6 @@ const EmployeeOrders = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const token = localStorage.getItem("authToken");
-
   useEffect(() => {
     const fetchOrders = async () => {
       setLoading(true);
