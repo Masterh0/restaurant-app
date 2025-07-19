@@ -1,0 +1,53 @@
+/* Main container style */
+.container {
+    max-width: 1200px; /* افزایش عرض کانتینر */
+    margin: 0 auto; /* مرکز‌سازی کانتینر */
+    padding: 20px; /* اضافه کردن فاصله از اطراف */
+}
+
+/* Card container for the order list */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #fff;
+    margin-bottom: 1rem; /* Additional spacing between cards */
+    overflow: hidden;
+    border: 1px solid #ddd; /* افزودن مرز نازک */
+}
+
+/* Card hover effect */
+.card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Card content */
+.card-content {
+    padding: 20px; /* افزایش فضای داخلی کارت‌ها */
+}
+
+/* Title and subtitle styling */
+.title.is-5 {
+    font-size: 1.25rem; /* افزایش اندازه فونت عنوان */
+    font-weight: 600;
+}
+
+.subtitle.has-text-grey {
+    color: #6c757d;
+    font-size: 1rem; /* افزایش سایز فونت توضیحات */
+}
+
+/* Content styling */
+.content p {
+    margin-bottom: 0.5rem; /* افزایش فاصله بین مطالب درون کارت‌ها */
+}
+
+/* Center title and content */
+.has-text-centered {
+    text-align: center;
+}
+
+/* Item list styling */
+.mb-2 {
+    margin-bottom: 0.5rem; /* افزایش فاصله عمودی بین آیتم‌ها */
+}

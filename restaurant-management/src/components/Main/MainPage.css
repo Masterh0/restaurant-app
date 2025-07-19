@@ -1,0 +1,48 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../../pic/top-view-delicious-cake-with-red-cream-cookies-dark-background-biscuit-cake-sugar-dessert-pie-sweet-cookies.jpg'); /* Background image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button {
+    width: 45%; /* Make the buttons look more form-like */
+    margin-top: 10px;
+}

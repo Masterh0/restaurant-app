@@ -1,0 +1,39 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* عرض منو */
+    background-color: #f5f5f5; /* رنگ پس‌زمینه */
+    padding: 20px; /* فاصله داخلی */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* سایه‌ */
+}
+
+.menu-label {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    margin-bottom: 10px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    padding: 5px;
+    display: block;
+    border-radius: 5px;
+}
+
+.menu-list a.is-active,
+.menu-list a:hover {
+    background-color: #4caf50; /* رنگ هنگام انتخاب یا هاور */
+    color: #fff;
+}

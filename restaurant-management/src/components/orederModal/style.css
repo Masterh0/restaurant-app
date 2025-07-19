@@ -1,0 +1,106 @@
+/* Modal Background */
+.modal-background {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Modal Content */
+  .modal-card {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  .modal-card-head {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+  }
+  
+  .modal-card-title {
+    font-size: 1.5rem;
+  }
+  
+  .delete {
+    color: #fff;
+  }
+  
+  .modal-card-body {
+    padding: 20px;
+  }
+  
+  /* Cart Summary Styling */
+  .cart-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .cart-item-image {
+    flex-shrink: 0;
+  }
+  
+  .item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-item-name {
+    font-weight: bold;
+  }
+  
+  .cart-item-quantity {
+    color: #555;
+    font-size: 0.9rem;
+  }
+  
+  .cart-item-total {
+    text-align: right;
+  }
+  
+  .cart-item-price {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .total {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  /* Footer Styling */
+  .modal-card-foot {
+    padding: 15px;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  

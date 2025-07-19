@@ -1,0 +1,95 @@
+/* style.css */
+.error-message {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 14px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  .discount-list-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .discount-codes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .discount-codes-table th,
+  .discount-codes-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .discount-codes-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .discount-codes-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .status.active {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .status.inactive {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .no-discounts {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    font-weight: bold;
+    text-align: center;
+  }
+  

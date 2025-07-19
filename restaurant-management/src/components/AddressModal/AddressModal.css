@@ -1,0 +1,29 @@
+/* Ensure the modal is full-screen and centered */
+.modal.is-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1050;
+  }
+  
+  .modal-card {
+    width: 80%;
+    max-width: 600px; /* Adjust based on your design */
+    margin: 0 auto;
+  }
+  
+  .modal-background {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+  }
+  

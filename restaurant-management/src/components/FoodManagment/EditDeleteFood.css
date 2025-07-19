@@ -1,0 +1,103 @@
+/* Loading spinner */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Dish list container */
+.dish-list-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.dish-list {
+    list-style: none;
+    padding: 0;
+}
+
+.dish-item {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.dish-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.dish-item-content {
+    flex: 1;
+}
+
+.dish-actions {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-dish-form,
+.edit-dish-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-button,
+.save-button {
+    background-color: green;
+}
+
+.add-button {
+    background-color: #007bff;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if there are more than 2 cards per row */
+    justify-content: space-between; /* Centers or aligns items */
+
+  }
+  .card {
+    flex: 1 1 45%; /* Makes the cards take up 45% of the container's width, adjusts as needed */
+    margin-bottom: 20px;
+    margin-left: 30px; /* Adds some spacing between the cards */
+  }
+  
