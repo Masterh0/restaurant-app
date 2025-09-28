@@ -13,11 +13,12 @@ import AddressForm from "../../components/AddressForm"; // Import the AddressFor
 import Card from "../../components/DishCard/DishCard"; // Import the reusable Card component
 import AddressModal from "../../components/AddressModal/AddressModal"; // Import the AddressModal component
 import Order from "../../components/orederModal/OrderModal";
+import Logout from "../../components/Logout";
 const FoodList = () => {
   const [dishes, setDishes] = useState([]); // All dishes
   const [popularDishes, setPopularDishes] = useState([]); // Top 5 popular dishes
   const [categories, setCategories] = useState([]); // Dish categories
-  const { auth } = useAuth(); // Authentication hook
+  const { auth, logout } = useAuth(); // Authentication hook
   const [currentCategory, setCurrentCategory] = useState("All"); // Current selected category
   const [cart, setCart] = useState([]); // Cart items
   const [visibleCategories, setVisibleCategories] = useState(["All"]); // Visible categories
@@ -206,6 +207,8 @@ const FoodList = () => {
   };
 
   return (
+    <div>
+      <button className="logoutClass" onClick={logout}> logout</button>
     <div className="container mt-5 FoodList">
       <div
         style={{
@@ -534,6 +537,7 @@ const FoodList = () => {
         onClose={handleCloseAddressModal}
         onAddressSelect={handleAddressSelect}
       />
+    </div>
     </div>
   );
 };

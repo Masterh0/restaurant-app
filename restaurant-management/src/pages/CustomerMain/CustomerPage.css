@@ -153,3 +153,13 @@
   max-height: 200px; /* Limit the image size */
   object-fit: cover; /* Maintain aspect ratio */
 }
+.logoutClass{
+  display: inline;
+  position: fixed;
+  right:4px ;
+  bottom: 4px;
+  width: auto;
+  background-color: red;
+  color: #f8f8f8;
+  cursor: pointer;
+}

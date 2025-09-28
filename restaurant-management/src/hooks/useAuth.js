@@ -9,12 +9,24 @@ export const AuthProvider = ({ children }) => {
         user: null,
         role: null,
     });
+    const [loading, setLoading] = useState(true); // برای جلوگیری از پرش به لاگین
 
     // بازیابی اطلاعات از localStorage هنگام بارگذاری اولیه
     useEffect(() => {
-        const storedAuth = localStorage.getItem('auth');
-        if (storedAuth) {
-            setAuth(JSON.parse(storedAuth));
+        try {
+            const storedAuth = localStorage.getItem('auth');
+            console.log("storedAuth:", storedAuth);
+
+            if (storedAuth) {
+                const parsed = JSON.parse(storedAuth);
+                setAuth(parsed);
+                console.log("parsedAuth:", parsed);
+            }
+        } catch (e) {
+            console.error("Failed to parse auth:", e);
+            localStorage.removeItem('auth');
+        } finally {
+            setLoading(false);
         }
     }, []);
 
@@ -31,8 +43,8 @@ export const AuthProvider = ({ children }) => {
                 role: response.data.role,
             };
 
-            setAuth(authData); // به‌روزرسانی state
-            localStorage.setItem('auth', JSON.stringify(authData)); // ذخیره در localStorage
+            setAuth(authData);
+            localStorage.setItem('auth', JSON.stringify(authData));
 
             return response.data;
         } catch (err) {
@@ -47,11 +59,11 @@ export const AuthProvider = ({ children }) => {
             user: null,
             role: null,
         });
-        localStorage.removeItem('auth'); // حذف اطلاعات از localStorage
+        localStorage.removeItem('auth');
     };
 
     return (
-        <AuthContext.Provider value={{ auth, login, logout }}>
+        <AuthContext.Provider value={{ auth, login, logout, loading }}>
             {children}
         </AuthContext.Provider>
     );
